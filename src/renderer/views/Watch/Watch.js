@@ -207,7 +207,7 @@ export default defineComponent({
       return this.$store.getters.getHideVideoLikesAndDislikes
     },
     theatrePossible: function () {
-      return !this.hideRecommendedVideos || (!this.hideLiveChat && this.isLive) || this.watchingPlaylist
+      return true
     },
     currentLocale: function () {
       return this.$i18n.locale

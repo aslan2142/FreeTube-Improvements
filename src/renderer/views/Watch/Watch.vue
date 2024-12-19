@@ -3,8 +3,8 @@
     class="videoLayout"
     :class="{
       isLoading,
-      useTheatreMode: useTheatreMode && !isLoading,
-      noSidebar: !theatrePossible
+      useTheatreMode: useTheatreMode && !hideRecommendedVideos && !isLoading,
+      noSidebar: useTheatreMode
     }"
   >
     <ft-loader
